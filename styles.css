@@ -17,9 +17,9 @@ body {
   display: flex;
   order: 2;
   margin-left: 10%;
-  margin-top: 30%;
+  margin-top: 44%;
   height: 18%;
-  width: 12%;
+  width: 13%;
 }
 
 .sidenav {
@@ -62,7 +62,7 @@ body {
 }
 
 .dropdown{
-  display: none;
+  display: inline-block;
 }
 
 li:hover.dropdown{
