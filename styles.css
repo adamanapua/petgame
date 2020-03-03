@@ -16,10 +16,10 @@ body {
 #Pett {
   display: flex;
   order: 2;
-  margin-left: 10%;
-  margin-top: 44%;
-  height: 18%;
-  width: 13%;
+  margin-left: 12%;
+  margin-top: 32%;
+  height: 15%;
+  width: 10%;
 }
 
 .sidenav {
@@ -90,7 +90,14 @@ li .dropdown{
   height: 50%;
   width: 50%;
 }
-
+#para{
+  color: white;
+  border-style: solid;
+  margin-top: 20%;
+  border-width: 1px;
+  margin-left: 30%;
+  margin-bottom: 28%;
+ }
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -98,4 +105,3 @@ li .dropdown{
   .sidenav a {
     font-size: 18px;
   }
-}
