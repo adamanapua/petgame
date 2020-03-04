@@ -9,10 +9,7 @@
   <script src="pet.js"></script>
 </head>
 <body>
-  
-    <img id="Pett" src="https://i.pinimg.com/originals/15/c1/44/15c144e8dc552a100b3292d268854499.gif">
-
-  <div id="menu">
+    <img ondrop="drop(event)" ondragover="allowDrop(event)" id="Pett" src="https://i.pinimg.com/originals/15/c1/44/15c144e8dc552a100b3292d268854499.gif">  <div id="menu">
   <span style="color: white;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
   </div>
   <div id="mySidenav" class="sidenav">
@@ -20,15 +17,23 @@
   <ul>
     <li><a href="#">Food</a></li>
   <ul class='dropdown'>
-  <li><a href="#"><img draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" id="image" src="https://s3.envato.com/files/242629133/preview.jpg"></a></li>
-  <li><a href="#"><img draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" id="image" src="https://web.mit.edu/swing/bread-bones-2018/flyer/bone-black.png"></li>
+    <div class="food" draggable="true" ondragstart="drag(event)">
+      <li><a href="#"><img class="image" src="https://s3.envato.com/files/242629133/preview.jpg"></a></li>
+    </div>
+    <div class="food" draggable="true" ondragstart="drag(event)">
+      <li><a href="#"><img class="image" src="https://web.mit.edu/swing/bread-bones-2018/flyer/bone-black.png"></li>
+    </div>
   </ul>
 </li>
   <ul>
     <li><a href="#">Toys</a></li>
   <ul class='dropdown'>
-    <li><a href="#"><img draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" id="image" src="https://res.cloudinary.com/pixel-art/image/upload/v1554280688/rope/1379705-rope-pixel-art.png"></a></li>
-    <li><a href="#"><img draggable="true" id="image" ondrop="drop(event)" ondragover="allowDrop(event)" src="https://art.pixilart.com/b7ea4111c4b19f8.png"></a></li>
+    <div class="toy" draggable="true">
+      <li><a href="#"><img class="image" src="https://res.cloudinary.com/pixel-art/image/upload/v1554280688/rope/1379705-rope-pixel-art.png"></a></li>
+    </div>
+    <div class="toy" draggable="true">
+      <li><a href="#"><img class="image" src="https://art.pixilart.com/b7ea4111c4b19f8.png"></a></li>
+    </div>
   </ul>
 </li>
 <ul>
