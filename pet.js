@@ -7,16 +7,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("menu").style.marginLeft = "0";
 }
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("image", ev.target.id);
-}
-
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("image");
-  ev.target.appendChild(document.getElementById(data));
-}
+function allowDrop(ev) {ev.preventDefault();}  
+function drag(ev) {ev.dataTransfer.setData("image/html", ev.target.id);}  
+function drop(ev) {  
+ev.preventDefault();  
+var data = ev.dataTransfer.getData("image/html");  
+ev.target.appendChild(document.getElementById(data));  
+}  
