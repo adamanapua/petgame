@@ -17,14 +17,6 @@ let foodDropCount = 0;function incHeight(id) {
   dog.style.width = newWidth + 'px';
   dog.src = 'https://i.pinimg.com/originals/cd/18/00/cd1800edc2c6c1ae930e7fa7fee1dca2.gif'
 }
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("menu").style.marginLeft = "0px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("menu").style.marginLeft = "0";
-}
 function allowDrop(ev) {
   ev.preventDefault();
 }
